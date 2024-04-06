@@ -1,0 +1,89 @@
+/*
+ * CSS de componentes
+ * 
+ * Criador: Rafael Turse
+ * Data de criação: 20190304 22h17
+ * 
+ */
+
+/* TITLE */
+.text-title-dark {
+    color: #333 !important;
+    letter-spacing: 5px;
+}
+.text-title-dark:hover { color: #111 !important; }
+
+.text-title-light {
+    color: #F9F9F9 !important;
+    letter-spacing: 5px;
+}
+.text-title-light:hover { color: #D9D9D9 !important; }
+
+/* SUBTITLE */
+.text-subtitle-dark {
+    color: #333 !important;
+    letter-spacing: 2px;
+}
+.text-subtitle-dark:hover { color: #111 !important; }
+
+.text-subtitle-light {
+    color: #D9D9D9 !important;
+    letter-spacing: 2px;
+}
+.text-subtitle-light:hover { color: #B9B9B9 !important; }
+
+/* TEXT */
+.text-content-dark { color: #555 !important; }
+
+.text-describe-dark {
+    color: #444 !important;
+    letter-spacing: 1px;
+}
+
+.text-describe-light {
+    color: #E9E9E9 !important;
+    letter-spacing: 1px;
+}
+
+.text-footer-dark { color: #777; } .text-footer-dark:hover { color: #999; }
+.text-footer-dark-title { color: #999; }
+.text-footer-dark-title:hover { color: #BBB; }
+
+.text-light { color: #F9F9F9 !important; }
+.text-light:hover { color: #D9D9D9 !important; }
+
+/* MARKER */
+.mark-indicator-dark { color: #111 !important; }
+.mark-indicator-light { color: #F9F9F9 !important; }
+
+.text-topic-dark { color: #444 !important; }
+
+/* EFFECT */
+.text-blurred {
+    color: transparent;
+    text-shadow: 0 0 2px rgba(0,0,0,0.50);
+}
+
+.text-hover:hover { font-weight: bold; }
+
+/* COLOR */
+.text-blue { color: #17A2b8 !important; }
+.text-gray { color: #111 !important; } .text-gray:hover { color: #666 !important; }
+.text-green { color: #28A745 !important; }
+.text-purple { color: #50345b !important; }
+.text-red { color: #DC3545 !important; }
+.text-yellow { color: #FFC107 !important; }
+
+/* SOCIAL */
+.text-social-button { letter-spacing: 5px; }
+
+/* SKILL */
+.text-skill:hover { font-weight: bold; }
+
+/* SPACING */
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+.letter-spacing-3 { letter-spacing: 3px; }
+.letter-spacing-4 { letter-spacing: 4px; }
+.letter-spacing-5 { letter-spacing: 5px; }  
+  

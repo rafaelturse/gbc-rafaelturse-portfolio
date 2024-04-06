@@ -1,0 +1,83 @@
+/*
+ * CSS de componentes
+ * 
+ * Criador: Rafael Turse
+ * Data de criação: 20180801 14h52
+ * 
+ */
+
+/* ICON */
+.icon {
+    font-size: 100px;
+    color: #333 !important;
+}
+
+.icon-main-posts {
+    font-size: 100px;
+    color: #333 !important;
+}
+
+.icon-top-posts {
+    font-size: 40px;
+    color: #333 !important;
+}
+
+.icon-text-light {
+    font-size: 40px;
+    color: #E9E9E9;
+}
+
+/* IMAGE */
+.image-company {
+    max-height: 200px;
+    max-width: 100%;
+ }
+
+.image-company-type {
+    height: 50px;
+    width: 50px;
+}
+
+.image-education {
+    height: 200px;
+    width: 200px;
+}
+
+.image-education-landscape {
+    height: 30px;
+}
+
+.image-feature {
+    height: 130px;
+}
+
+.image-gray {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.image-gray:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.image-main-icon {
+    height: 30px;
+}
+
+.image-main-menu-logo:hover {
+    opacity: 0.5;
+}
+
+.image-personal-me {
+    height: 300px;
+    width: 300px;
+}
+
+.image-zoon-icon:hover {
+    transform: scale(1.2);
+
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-in-out;
+}

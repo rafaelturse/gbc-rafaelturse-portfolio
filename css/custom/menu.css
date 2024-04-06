@@ -1,0 +1,34 @@
+/*
+ * CSS de menu
+ * 
+ * Criador: Rafael Turse
+ * Data de criaÃ§Ã£o: 20190409 20h12
+ * 
+ */
+
+ .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+}
+
+.collapse ul li a {
+	color:#F9F9F9;
+}
+
+.collapse ul li a:hover {
+	opacity: 0.5;
+}
+
+.navbar {
+	background-color: #111;
+	color: #F9F9F9;
+    transition: top 1s;
+ }
+
+.navbar .navbar-nav > li > .dropdown-menu { 
+	background-color: #111;
+	color: #F9F9F9;
+}
+
+nav .navbar-nav li a{
+	color: #F9F9F9 !important;
+}

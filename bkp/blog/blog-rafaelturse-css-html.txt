@@ -1,0 +1,30 @@
+blockquoted
+    html
+        <div style="text-align: right;">
+            <blockquote class="tr_bq" style="text-align: right;">
+                <span id="icon-blockquote"><i class="fas fa-lightbulb"></i></span>
+                <span style="display: inline; font-family: inherit;">Continue reading about my IT experience</span>
+            </blockquote>
+        </div>
+    css
+        #icon-blockquote {
+          display:inline; 
+        
+          background-color: #333;
+
+          padding: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        blockquote {
+          display: inline-block;
+
+          font-size: 18px;
+
+          background-color: #999;
+
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 10px;
+        }

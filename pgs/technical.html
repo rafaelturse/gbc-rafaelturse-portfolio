@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Rafael Turse" />
+    <meta name="description" content="Rafael Turse - Desenvolvimento de Sistemas" />
+    <meta name="keywords"  content="rafael turse,desenvolvimento,sistemas" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../art/logo/logo-rafaelturse-favicon.svg" />
+
+    <link rel="stylesheet" href="../css/custom/components.css">
+    <link rel="stylesheet" href="../css/custom/font.css">
+    <link rel="stylesheet" href="../css/custom/image.css">
+    <link rel="stylesheet" href="../css/custom/menu.css">
+    <link rel="stylesheet" href="../css/custom/page.css">
+    <link rel="stylesheet" href="../css/custom/table.css">
+    <link rel="stylesheet" href="../css/custom/text.css">
+
+    <title>Rafael Turse</title>
+</head>
+<body id="top">
+    <!-- MENU -->
+    <nav id="topMenu" class="navbar navbar-default navbar-dark navbar-expand-md fixed-top"> 
+        <div class="container">
+            <a class="navbar-brand mx-1" href="../index.html"><img class="img-fluid image-main-menu-logo mx-2" src="../art/logo/logo-rafaelturse-logo-white.svg" width="30"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto"></ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <ul class="navbar-nav mr-auto">
+                        <div id="menu_pages" class="btn-group btn-group-sm" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="pages" type="button" class="btn dropdown-toggle font-main-menu" data-toggle="dropdown"><i class="fas fa-copy"></i> Content</button>
+                                <div class="dropdown-menu" aria-labelledby="pages">
+                                    <a class="dropdown-item font-main-menu" href="#"><i class="fas fa-chess"></i> Articles</a>
+                                    <a class="dropdown-item font-main-menu" href="#"><i class="fas fa-palette"></i> Portfolio</a>
+                                    <a class="dropdown-item font-main-menu" href="systems.html"><i class="fas fa-bolt"></i> Systems</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li id="menu_articles" class="nav-item mx-2"><a class="nav-link font-main-menu" href="#"><i class="fas fa-chess"></i> Articles</a></li>
+                        <li id="menu_portfolio" class="nav-item mx-2"><a class="nav-link font-main-menu" href="#"><i class="fas fa-palette"></i> Portfolio</a></li>
+                        <li id="menu_professional" class="nav-item mx-2"><a class="nav-link font-main-menu" href="professional.html"><i class="fas fa-coffee"></i> Professional</a></li>
+                        <li id="menu_systems" class="nav-item mx-2"><a class="nav-link font-main-menu" href="systems.html"><i class="fas fa-bolt"></i> Systems</a></li>
+                        <li id="menu_technical" class="nav-item mx-2"><a class="nav-link font-main-menu" href="technical.html"><i class="fas fa-code"></i> Technical</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEAD -->
+    <div class="row">
+        <div class="rounded cutway send-to-back">
+            <div class="container">
+                <div class="pt-5 px-3 bring-to-front">
+                    <h1 class="font-text-title font-weight-bold text-title-light pt-5"><i class="fas fa-code mr-2"></i>Technical</h1>
+                    <h5 class="font-text-title text-subtitle-light mt-3">Information about development skills and programming languages</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PERSONAL -->
+    <div class="body-content">
+        <div id="data" class="d-flex justify-content-end mt-5 mr-3"><a href="#top"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+            <div class="container mt-5">
+                <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-chart-pie mr-2"></i>Data</h1></div>
+                <span class="underline underline-dark mx-auto"></span>
+        
+                <!-- PERSONAL MENU  -->    
+                <div class="font-skill tab-content borderless mt-5">
+                    <nav class="nav nav-pills flex-column flex-md-row font-pills-title">
+                        <a id="interest" class="flex-md-fill text-md-center nav-link m-2 active" data-toggle="tab" href="#content-interest" onmouseover="doClick('interest')"><i class="fas fa-angle-right mr-2"></i>INTEREST</a>
+                        <a id="focus" class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-focus" onmouseover="doClick('focus')"><i class="fas fa-angle-right mr-2"></i>FOCUS</a>
+                        <a id="resume" class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-resume" onmouseover="doClick('resume')"><i class="fas fa-angle-right mr-2"></i>RESUME</a>
+                    </nav>
+
+                    <!-- INTEREST -->
+                    <div id="content-interest" class="tab-pane fade show active" role="tabpanel">
+                        <div id="interestChart" class="d-flex justify-content-center my-3"></div>
+                    </div>
+
+                    <!-- FOCUS -->
+                    <div id="content-focus" class="tab-pane fade show" role="tabpanel">
+                        <div class="container font-text">
+                            <div class="row">
+                                <div class="col-xl-7 my-auto">
+                                    <div class="row px-4">
+                                        <p class="text-describe-dark">
+                                            The current demand for software development is increasingly demanding. In addition to developing 
+                                            <span class="font-spotlight text-green">backend</span> for <span class="font-spotlight text-green">WEB applications</span>, 
+                                            I have specialized with <span class="font-spotlight text-green">frontend</span> and <span class="font-spotlight text-green">
+                                            mobile applications</span>.
+                                        </p>
+                                        <p class="text-describe-dark">
+                                            Being self-sufficient, I'm also a professional in <span class="font-spotlight text-blue">database</span>, 
+                                            <span class="font-spotlight text-blue">usability</span>, <span class="font-spotlight text-blue">javascript</span> 
+                                            and <span class="font-spotlight text-blue">devOps</span>.
+                                        </p>
+                                    </div>                
+                                </div>
+                                <div class="col-12 col-xl-5 d-flex justify-content-center">
+                                    <div id="focusChart" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESUME 
+
+                        add linkedin page
+                        add download pfd contracted
+                        add download doc contracted
+
+                    -->
+                    <div id="content-resume" class="tab-pane fade show" role="tabpanel">
+                        <div class="row rounded mt-5 mx-3 p-3">
+                            <div class="col-12 mt-4 text-muted d-flex justify-content-center">
+                                <h6>Download my resume. It's always completed and updated</h6>
+                            </div>
+                        </div>
+                        <div class="row rounded mt-2 mx-3 p-3">
+                            <object data="../doc/resume/resume-rafael-turse.pdf" type="application/pdf" width="100%" height="1200px"> 
+                                <p>You don't have a <strong>PDF plugin</strong> for this browser. Don't worry, you can download >>> <a href="../doc/resume/resume-rafael-turse.pdf">here</a></p>  
+                            </object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECHNOLOGY TABLE -->
+        <div id="technology" class="d-flex justify-content-end mt-5 mr-3"><a href="#top"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+        <div class="container mt-5">
+            <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-tools mr-2"></i>Technology</h1></div>
+            <span class="underline underline-dark mx-auto"></span>
+
+            <!-- SKILLS MENU  -->    
+            <div class="font-skill tab-content borderless mt-5">
+                <nav class="nav nav-pills flex-column flex-md-row font-pills-title">
+                    <a id="backend" class="flex-md-fill text-md-center nav-link m-2 active" data-toggle="tab" href="#content-backend" onmouseover="doClick('backend')"><i class="fas fa-angle-right mr-2"></i>BACKEND</a>
+                    <a id="frontend" class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-frontend" onmouseover="doClick('frontend')"><i class="fas fa-angle-right mr-2"></i>FRONTEND</a>
+                    <a id="database" class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-database" onmouseover="doClick('database')"><i class="fas fa-angle-right mr-2"></i>DATABASE</a>
+                    <a id="devops" class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-devops" onmouseover="doClick('devops')"><i class="fas fa-angle-right mr-2"></i>DEVOPS</a>
+                </nav>
+
+                <!-- BACKEND SKILLS -->
+                <div id="content-backend" class="tab-pane fade show active">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless table-hover thead-dark text-content-dark">
+                            <thead>
+                                <tr>
+                                    <th class="col-skill"><span class="font-skill-title text-skill text-light ml-3"><i class="fas fa-skull-crossbones mr-2"></i>Skill</span></th>
+                                    <th class="col-level"><span class="font-skill-title text-skill text-light"><i class="fab fa-stack-overflow mr-2"></i>Fluency</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>JSE - JEE</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Object Orientation</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Java</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">MVC</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Reflexion</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Annotation</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Abstract Class</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Encapsulation</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Inheritance</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Polymorphism</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Lambda</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JSF</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JSP</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache Struts</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Dependency Injection</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Inversion of Control</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Java FX</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Java FX</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Scene Builder</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">FXML</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Spring</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">STS - Spring Tool Suite</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Framework</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring MVC</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Boot</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Batch</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Data-JPA</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Security</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Javascript</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Node</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Express</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Javascript</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">ECMAScript 6 - ES6</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">TypeScript</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">React</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Redux</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>Mobile</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Android</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Swift</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Kotlin</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Cordova</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Ionic 3</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Dart Lang</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Google Firebase</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Dependency</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">CDI</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">EJB</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache Maven</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">NPM</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Gradle</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JFrog</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Log</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Log4j</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Scheduler</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Quartz</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Cron</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Security</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">OAuth2</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Security</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JavaCV</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache Shiro</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JWT</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Hibernate Envers</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Report</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache POI</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Jasper - iReport</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Database - ORM</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JPA - Hibernate</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Data-JPA</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Criteria</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">HQL - JPQL</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Named - Native Query</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Data</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">HTTP</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">API REST - RESTFul</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">End Point</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JSON</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">XML</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">YAML</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Soap</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">WSDL</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">XSD Schema</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SoapUI</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Swagger</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Postman</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Microservices</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Webservices</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Application Server</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">TomCat</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">WildFly</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Websphere</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Xampp</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>IDE</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Eclipse</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Spring Tool Suite</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">NetBeans</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Android Studio</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">IntelliJ IDEA</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="text-skill text-center"><h6>Other</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Visual Basic 6 (VB)</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Visual Basic Application (VBA)</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Delphi 4, 7, 2007</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Go - Golang</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                    <tr>
+                                    <td><span class="text-skill ml-3">Python 3</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">PHP 7 - POO</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end mt-3"><a href="#technology"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+
+                <!-- FRONTEND SKILLS -->
+                <div id="content-frontend" class="tab-pane fade show" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless table-hover thead-dark text-content-dark">
+                            <thead>
+                                <tr>
+                                    <th class="col-skill"><span class="font-skill-title font-weight-bold text-light ml-3"><i class="fas fa-skull-crossbones mr-2"></i>Skill</span></th>
+                                    <th class="col-level"><span class="font-skill-title font-weight-bold text-light"><i class="fab fa-stack-overflow mr-2"></i>Fluency</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Template</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">HTML5</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">PUG</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Responsive</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Thymeleaf</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">EJS</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Primefaces 3</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">XHTML</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Regex</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Javascript</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JQuery</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Ajax</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>CSS</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">CSS3</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SCCS</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SASS</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">GRID</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Flexbox</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Bootstrap</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Material Design - Materialize</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>SPA</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Angular</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">React</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">React Native</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Vue</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Chart</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">ApexCharts.js</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Chart.js</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Design</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Corel Draw</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Inkscape</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Adobe Illustrator</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Adobe Photoshop</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Motion</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Adobe After Effects</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Adobe Premier</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Management</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Google Analytics</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SEO</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Chrome Developer Tools</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>IDE</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Visual Studio Code</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Sublime</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Atom</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Notepad++</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <h6 class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>CMS</h6></span></td></h6>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Joomla</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">WordPress</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end mt-3"><a href="#technology"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+        
+                <!-- DATABASE SKILLS -->
+                <div id="content-database" class="tab-pane fade show" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless table-hover thead-dark text-content-dark">
+                            <thead>
+                                <tr>
+                                    <th class="col-skill"><span class="font-skill-title font-weight-bold text-light ml-3"><i class="fas fa-skull-crossbones mr-2"></i>Skill</span></th>
+                                    <th class="col-level"><span class="font-skill-title font-weight-bold text-light"><i class="fab fa-stack-overflow mr-2"></i>Fluency</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>RDBMS</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SQL Server</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">MySQL</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Oracle SQL Developer</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">PostgreSQL</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SQLite</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">DBeaver</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SQuirreL</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache Derby</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>SQL</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Stored Procedure</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Function</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Trigger</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">View</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Complexes Selects </span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Join</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Subquery</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Count - Sum - AVG</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Group - Having</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>NoSQL</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">MongoDB</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">MongoDB Compass</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>ETL</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">SQL Server Integration Services</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Big Data</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Hadoop</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Apache Spark</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Python 3</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end mt-3"><a href="#technology"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+        
+                <!-- DEVOPS SKILLS -->
+                <div id="content-devops" class="tab-pane fade show" role="tabpanel">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless table-hover thead-dark text-content-dark">
+                            <thead>
+                                <tr>
+                                    <th class="col-skill"><span class="font-skill-title font-weight-bold text-light ml-3"><i class="fas fa-skull-crossbones mr-2"></i>Skill</span></th>
+                                    <th class="col-level"><span class="font-skill-title font-weight-bold text-light"><i class="fab fa-stack-overflow mr-2"></i>Fluency</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Automation</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Jenkins</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Kubernetes</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Elasticsearch</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Docker</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Tests</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JUnit</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Selenium</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Mockito</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">TDD</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>   
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Repository</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">GitLab</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">GitHub</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Bitbucket</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Tortoise SVN</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">JFrog</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning w-50" role="progressbar"></div></div></td>
+                                </tr>
+                                <tr class="table-subject"><td colspan="4"><span class="font-weight-bold text-center"><h6>Cloud Application Platform</h6></span></td></tr>
+                                <tr>
+                                    <td><span class="text-skill ml-3">Heroku</span></td>
+                                    <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end mt-3"><a href="#technology"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LANDSCAPE -->
+        <div id="landscape" class="d-flex justify-content-end mt-5 mr-3"><a href="#top"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+        <div class="container-fluid">
+            <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-image mr-2"></i>Landscape</h1></div>
+            <span class="underline underline-dark mx-auto"></span>
+
+            <div class="row d-flex justify-content-center mx-1 mt-5">
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-java.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-javafx.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jsp.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-struts.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jsf.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-spring.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-springframew.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-springboot.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-springbatch.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-springdata.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-springsecurity.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-express.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ant.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-maven.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-npm.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-node.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-js.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ts.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jquery.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-poi.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jasper.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-cordova.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-react.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-redux.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-android.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-gradle.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-dart.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-kotlin.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-swift.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ionic.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-firebase.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jpa.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-hibernate.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-rest.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-restful.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-xml.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-yml.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-json.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-xsd.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-soap.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-swagger.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-postman.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-tomcat.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-wildfly.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-websphere.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-xampp.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-sts.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-eclipse.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-netbeans.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-androidstudio.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-intelij.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-vscode.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-sublime.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-atom.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-notepadpp.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-joomla.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-wordpress.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-go.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-python.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-php.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-delphi.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-html.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-css.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-bootstrap.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-materialize.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-analytics.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-seo.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-chromedev.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-primefaces.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-xhtml.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ajax.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-regex.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ejs.jpg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-thymeleaf.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon_mentawai.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-angular.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-vue.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-corel.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-Inkscape.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-illustrator.svg"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-photoshop.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-sqlserver.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-mysql.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-oraclesql.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-postgre.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-sqlite.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-mongodb.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-dbeaver.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-squirel.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-hadoop.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-spark.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-ejb.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jenkins.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-kubernets.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-elasticsearch.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-docker.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-selenium.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-junit.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-mokito.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-tdd.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-gitlab.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-github.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-bitbucket.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-tortoise.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-jfrog.png"></div>
+                <div class="img-fluid image-zoon-icon d-flex justify-content-center m-2"><img class="image-main-icon image-gray" src="../art/icon/technology/icon-heroku.svg"></div>
+            </div>
+        </div>
+    </div>
+                 
+    <!-- FOOTER -->
+    <div class="footer mt-1 p-2">
+        <div class="d-flex justify-content-end mr-3"><a href="#top"><i class="mark-indicator-light fas fa-angle-up"></i></a></div>
+        <div class="col">
+            <div class="row px-1">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <small><a class="font-footer-title text-footer-dark-title font-weight-bold" href="professional.html"><i class="fas fa-coffee mr-2"></i>Professional</a></small>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#personal"><i class="fas fa-angle-right mr-2"></i>Personal</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#education"><i class="fas fa-angle-right mr-2"></i>Education</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#career"><i class="fas fa-angle-right mr-2"></i>Career</a></small></div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <small><a class="font-footer-title text-footer-dark-title font-weight-bold" href="technical.html"><i class="fas fa-code mr-2"></i>Technical</a></small>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#data"><i class="fas fa-angle-right mr-2"></i>Data</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#technology"><i class="fas fa-angle-right mr-2"></i>Technology</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#landscape"><i class="fas fa-angle-right mr-2"></i>Landscape</a></small></div>
+                </div>
+            </div>  
+            <div class="d-flex justify-content-center font-footer-developer text-footer-dark mt-3 mb-1"><small>Developed by <strong>Rafael Turse</strong></small></div>
+        </div>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139876896-1"></script>
+    <script src="../js/control/statistics.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="../js/custom/menu.js"></script>
+    <script src="../js/custom/chart.js"></script>
+    <script src="../js/cron/waypoints.js"></script>
+    <script src="../js/cron/counterup.js"></script>
+    <script src="../js/cron/cron.js"></script>
+
+    <script src="../js/custom/utils.js"></script>
+</body>
+</html>

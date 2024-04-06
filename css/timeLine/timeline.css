@@ -1,0 +1,145 @@
+/** timeline box structure **/
+.timeline {
+    margin-bottom: 0px;
+    margin-top: 100px;
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #111;
+    left: 50%;
+}
+
+.tldate {
+    display: block;
+    width: 10%;
+    background: #111;
+    border: 3px solid #111;
+    color: #EEE;
+    margin: 0 auto;
+    padding: 3px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeline li {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li:before, .timeline li:after {
+    content: " ";
+    display: table;
+}
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    background: #111;
+    padding: 20px;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #111;
+    border-right: 0 solid #111;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #111;
+    border-right: 0 solid #111;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+    top:0;
+    right:0;
+    display: none;
+    border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+/** circle icons **/
+.timeline li .tl-circ {
+    background-color: #111; 
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left:-8px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;  
+}
+
+.timelineEnd{
+    background-color: #111; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    margin-bottom: 100px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}

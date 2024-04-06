@@ -1,0 +1,107 @@
+/*
+ * CSS de componentes
+ * 
+ * Criador: Rafael Turse
+ * Data de criação: 20180801 14h52
+ * 
+ */
+
+/* 
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.font-badge {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+}
+
+.font-describe {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-read-text {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.font-footer-developer {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+}
+
+.font-footer-title {
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 1px;
+}
+
+.font-footer-topic {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+}
+
+.font-main-menu {
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 1px;
+}
+
+.font-social {
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 1px;
+}
+
+.font-pills-title {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.font-skill {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.font-skill-title {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.font-spotlight {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.font-subtitle {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 5px;
+}
+
+.font-text {
+    font-family: 'Rubik', sans-serif;
+}
+
+.font-text-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-title {
+    color: #111;
+    font-family: 'Gloria Hallelujah', cursive;
+    letter-spacing: 2px;
+}
+
+.font-topic {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-topic-personal {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 3px;
+}

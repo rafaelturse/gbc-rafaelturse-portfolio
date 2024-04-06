@@ -1,0 +1,247 @@
+.bar-chart li:nth-child(6n) {
+    margin-right: 0;
+}
+
+.bar-chart {
+    /* Y Axis */
+    list-style: none;
+    height: 500px;
+    position: relative;
+    background: url(images/axis.png) repeat-x;
+    padding: 0;
+    margin: 0px;
+}
+
+.bar-chart li.axis {
+    width: 8%;
+    height: 500px;
+    background: #F9F9F9;
+    -webkit-box-shadow: inset 0 0 0 0 #F9F9F9;
+    -moz-box-shadow: inset 0 0 0 0 #F9F9F9;
+    box-shadow: inset 0 0 0 0 #F9F9F9;
+}
+
+.bar-chart li {
+    display: inline-block;
+    width: 16%;
+    height: 100%;
+    background-color: #CCC;
+    text-align: center;
+    font-weight: bold;
+    color: #F9F9F9;
+    position: relative;
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0 1.8% 0 0;
+    vertical-align: bottom;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6);
+}
+
+.bar-chart .skill {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.bar-chart .label {
+    color: #666;
+    margin: -0.6em 0 88px 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: -0.6em 0 92px 0;
+}
+
+.bar-chart .aqua {
+    border-color: #8dc5be;
+    background-color: #b0dbd6;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5fb2a8), color-stop(1, #b0dbd6));
+    background-image: -ms-linear-gradient(bottom, #5fb2a8, #b0dbd6);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #5fb2a8 0%, #b0dbd6 100%);
+    background-image: -o-linear-gradient(bottom, #5fb2a8, #b0dbd6);
+    height: 95%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .pink {
+    border-color: #ebc0b5;
+    background-color: #f4dcd6;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1ae9e), color-stop(1, #f4dcd6));
+    background-image: -ms-linear-gradient(bottom, #e1ae9e, #f4dcd6);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #e1ae9e 0%, #f4dcd6 100%);
+    background-image: -o-linear-gradient(bottom, #e1ae9e, #f4dcd6);
+    z-index: -1;
+}
+
+.bar-chart .yellow {
+    border-color: #e7af30;
+    background-color: #efc563;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dfae36), color-stop(1, #efc563));
+    background-image: -ms-linear-gradient(bottom, #dfae36, #efc563);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #dfae36 0%, #efc563 100%);
+    background-image: -o-linear-gradient(bottom, #dfae36, #efc563);
+    height: 50%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .brown {
+    border-color: #dcb386;
+    background-color: #dcba83;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bc8e5b), color-stop(1, #dcba83));
+    background-image: -ms-linear-gradient(bottom, #bc8e5b, #dcba83);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #bc8e5b 0%, #dcba83 100%);
+    background-image: -o-linear-gradient(bottom, #bc8e5b, #dcba83);
+    height: 80%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .black {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 80%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .red {
+    border-color: #e14949;
+    background-color: #da6d6c;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ca4544), color-stop(1, #da6d6c));
+    background-image: -ms-linear-gradient(bottom, #ca4544, #da6d6c);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #ca4544 0%, #da6d6c 100%);
+    background-image: -o-linear-gradient(bottom, #ca4544, #da6d6c);
+    height: 65%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .blue {
+    border-color: #9394ed;
+    background-color: #ddd6f4;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7173e8), color-stop(1, #7a7ce8));
+    background-image: -ms-linear-gradient(bottom, #7173e8, #7a7ce8);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #7173e8 0%, #7a7ce8 100%);
+    background-image: -o-linear-gradient(bottom, #7173e8, #7a7ce8);
+    height: 50%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .backEnd {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 80%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .frontEnd {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 50%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .base {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 65%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .selfStudy {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 100%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.bar-chart .image {
+    border-color: #333;
+    background-color: #111;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111), color-stop(1, #333));
+    background-image: -ms-linear-gradient(bottom, #111, #333);
+    /*background-image: -webkit-linear-gradient(bottom, @start, @stop);*/
+    background-image: -moz-linear-gradient(center bottom, #111 0%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #111, #333);
+    height: 50%; 
+    opacity: 1;
+    z-index: -1;
+}
+
+.rounded-top,
+.bar-chart li {
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+}
+
+.text-shadow-black,
+.bar-chart .percent,
+.bar-chart .skill,
+a.button,
+.submit {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-white,
+.bar-chart .label,
+.concept,
+.header-center h3 {
+    text-shadow: 0px 1px 1px #FFF;
+}
+
+.skilsDetail {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.skilsSpacer {
+    padding-top: 50px;
+}

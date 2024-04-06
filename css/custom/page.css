@@ -1,0 +1,312 @@
+/*
+ * CSS de componentes
+ * 
+ * Criador: Rafael Turse
+ * Data de criaÃ§Ã£o: 20180726 14h09
+ * 
+**/
+
+/* extra small */
+@media (max-width: 576px) and (orientation:landscape) { 
+    html {
+        /* background-color: red; */
+        height: 170%;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    #menu_pages { display: none; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: block; }
+    #menu_portfolio { display: block; }
+    #menu_systems { display: block; }
+}
+@media (max-width: 576px) and (orientation:portrait) { 
+    html {
+        /* background-color: blue; */
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    #menu_pages { display: none; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: block; }
+    #menu_portfolio { display: block; }
+    #menu_systems { display: block; }
+}
+
+/* small */
+@media (min-width: 576px) and (orientation:landscape) { 
+    html {
+        /* background-color: yellow; */
+        height: 200%;
+    }
+
+    #menu_pages { display: none; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: block; }
+    #menu_portfolio { display: block; }
+    #menu_systems { display: block; }
+}
+@media (min-width: 576px) and (orientation:portrait) { 
+    html {
+        /* background-color: green; */
+        height: 100%;
+    }
+
+    #menu_pages { display: none; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: block; }
+    #menu_portfolio { display: block; }
+    #menu_systems { display: block; }
+}
+
+/* medium */
+@media (min-width: 768px) and (orientation:landscape) { 
+    html {
+        /* background-color: gray; */
+        height: 170%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+@media (min-width: 768px) and (orientation:portrait) { 
+    html {
+        /* background-color: salmon; */
+        height: 100%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+
+/* large */
+@media (min-width: 992px) and (orientation:landscape) { 
+    html {
+        /* background-color: orange; */
+        height: 100%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+@media (min-width: 992px) and (orientation:portrait) { 
+    html {
+        /* background-color: purple; */
+        height: 100%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+
+/* extra large */
+@media (min-width: 1200px) and (orientation:landscape) { 
+    html {
+        /* background-color: springgreen; */
+        height: 100%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+@media (min-width: 1200px) and (orientation:portrait) { 
+    html {
+        /* background-color: brown; */
+        height: 100%;
+    }
+
+    #menu_pages { display: block; }
+    #menu_professional { display: block; }
+    #menu_technical { display: block; }
+    #menu_articles { display: none; }
+    #menu_portfolio { display: none; }
+    #menu_systems { display: none; }
+}
+
+@media (orientation: landscape) {
+    .dropdown .dropdown-menu {
+        opacity:0;
+        /*
+        display: block;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+        */
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ALIGN */
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INDEX */
+.bring-to-front {
+    z-index: 1;
+}
+
+.send-to-back {
+    z-index: 1000;
+}
+
+/* GRADIENTE */
+.gradient-to-dark {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #F9F9F9 10%, #111 70%);
+}
+
+/* BODY */
+body {
+    background-color: #F9F9F9;    
+    
+    min-height: 100%;    
+    
+    position: relative;
+}
+
+.body-content {
+    margin-top: -200px;
+}
+
+.head-margin {
+    margin-top: 100px;
+}
+
+/* CARD */
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: .25s box-shadow;
+    transition: .25s box-shadow;
+}
+
+.card:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* LINK */
+a {
+    color: #111;
+    text-decoration: none;
+}  
+
+a:hover {
+    color: #111;
+    text-decoration: none;
+}  
+ 
+/* FOOTER */
+.footer-big-page {
+    background-color: #111;
+    box-shadow: 0px 10px 10px 30px #111; 
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    position: relative;
+
+    margin-top: 200px;
+}
+
+.footer-small-page {
+    background-color: #111;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    position: absolute;
+
+    margin-top: 200px;
+}
+
+.footer {
+    background-color: #111;
+    clear:both;
+    position: relative;
+}
+
+/* SESSION */
+.background-dark-main-header {
+    background-color: #111;
+
+    height: 500px;
+}
+
+.content-20 {
+    height: 20%;
+}
+
+.content-30 {
+    height: 30%;
+}
+
+.content-70 {
+    height: 70%;
+}
+
+.content-80 {
+    height: 80%;
+}
+
+.full-dark-h {
+    background-color: #111;
+    
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+
+    /* box-shadow: 0px 10px 5px 15px #111; */
+}
+
+.full-gray-h {
+    background-color: #E9E9E9;
+    
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+
+    box-shadow: 0px 20px 20px 15px #E9E9E9;
+}

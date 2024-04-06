@@ -1,0 +1,25 @@
+/*
+ * CSS de componentes
+ * 
+ * Criador: Rafael Turse
+ * Data de criação: 20190417 18h56
+ * 
+ */
+
+.carousel-indicators li {
+    background-color: #111;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.1s ease-in-out left;
+  -moz-transition: 0.1s ease-in-out left;
+  -o-transition: 0.1s ease-in-out left;
+  transition: 0.1s ease-in-out left;
+}

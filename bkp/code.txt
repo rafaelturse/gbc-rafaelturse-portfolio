@@ -1,0 +1,185 @@
+<!-- SERVICE 
+    <div id="services" class="container-fluid font-text my-5">
+        <div class="row mb-3"><h1 class="font-title font-weight-bold mx-auto"><i class="fas fa-dragon"></i>  Services</h1></div>
+
+        <div class="card mb-3 border-0 my-5">
+            <div class="row no-gutters">
+                <div class="col-3 background-green">
+                    <img src="..." class="card-img" alt="...">
+                </div>
+                <div class="col-9">
+                    <div class="card-body">
+                        <h4 class="card-title font-weight-bold font-spotlight">
+                            <i class="fas fa-cloud"></i>  Web Application<small class="text-muted"> your systems in the "clouds"</small>
+                        </h4>
+                        <p class="card-text font-text text-justify">
+                            Eliminate the need for servers and supercomputers. Uncomplicate your systems and have your applications always 
+                            available on the web
+                        </p>
+                        <p class="card-text d-flex justify-content-end mx-2 mt-5"><small class="text-muted">Read more</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 border-0 my-5">
+            <div class="row no-gutters">
+                <div class="col-9">
+                    <div class="card-body">
+                        <h4 class="card-title font-weight-bold font-spotlight">
+                            <i class="fas fa-mobile-alt"></i>  Mobile App<small class="text-muted"> your systems, where you want</small>
+                        </h4>
+                        <p class="card-text font-text text-justify">
+                            Applications for all mobile platforms, making your system available for everyone to access wherever and whenever 
+                            they want. The App is able to access all the features of the mobile device to allow a great improvement in the 
+                            productivity of your business.
+                        </p>
+                        <p class="card-text d-flex justify-content-start mx-1 mt-5"><small class="text-muted">Read more</small></p>
+                    </div>
+                </div>
+                <div class="col-3 background-blue">
+                    <img src="..." class="card-img" alt="...">
+                </div>
+            </div>
+        </div>   
+
+        <div class="card mb-3 border-0 my-5">
+                <div class="row no-gutters">
+                    <div class="col-3 background-yellow">
+                        <img src="..." class="card-img" alt="...">
+                    </div>
+                    <div class="col-9">
+                        <div class="card-body">
+                            <h4 class="card-title font-weight-bold font-spotlight">
+                                <i class="fas fa-globe-americas"></i>  Web Sites<small class="text-muted"> your site, modern and informative</small>
+                            </h4>
+                            <p class="card-text font-text text-justify">
+                                Institutional site, business or portfolio. Tell your story, professional career, jobs, services, differentials, 
+                                contacts and locations. Dynamic components and everything that is more modern on today's sites to work perfectly 
+                                on computers or mobile devices. Have a business card in the virtual world - a gateway to good deals.
+                            </p>
+                            <p class="card-text d-flex justify-content-end mx-2 mt-5"><small class="text-muted">Read more</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- FEATURES
+    <div id="features" class="container-fluid font-text mt-5 gradient-to-dark">
+        <div class="row my-3"><h1 class="font-title font-weight-bold mx-auto"><i class="fas fa-eye"></i>  Features</h1></div>
+
+        <div class="row card-deck">            
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 py-3">
+                <div class="card">
+                    <img src="../img/background-quality.jpg" class="card-img-top img-responsive" height="180">
+                    <div class="card-img-overlay d-flex h-50">
+                        <small class="text-light">wrote in Feb 22 2019</small>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-space font-title font-weight-bold d-flex justify-content-center">Quality</h4>
+                        <p class="card-text">Professional systems, flexible and performative. Functional and modern interfaces</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <small>Read more</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 py-3">
+                <div class="card">
+                    <img src="../img/background-dashboard.jpg" class="card-img-top img-responsive" height="180">
+                    <div class="card-img-overlay d-flex h-50">
+                        <small class="text-light">wrote in Jan 07 2019</small>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-space font-title font-weight-bold d-flex justify-content-center">Management</h4>
+                        <p class="card-text">See dashboards in real time, print reports, and download data into Office documents</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <small>Read more</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 py-3">
+                <div class="card">
+                    <img src="../img/background-systems.jpg" class="card-img-top img-responsive" height="180">
+                    <div class="card-img-overlay d-flex h-50">
+                        <small class="text-light">wrote in Oct 31 2018</small>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-space font-title font-weight-bold d-flex justify-content-center">Platforms</h4>
+                        <p class="card-text">Availability for desktop, mobile or WEB. You choose the one that best suits your business</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <small>Read more</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 py-3">
+                <div class="card">
+                    <img src="../img/background-safe.jpg" class="card-img-top img-responsive" height="180">
+                    <div class="card-img-overlay d-flex h-50">
+                        <small class="text-light">wrote in Sep 12 2019</small>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-space font-title font-weight-bold d-flex justify-content-center">Safety</h4>
+                        <p class="card-text">Encryption to protect data, backup to avoid loss. Secure database and secure logins</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <small>Read more</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- TECHNOLOGY
+    <div id="technology" class="full-dark-h mb-5 px-3">
+        <div class="row"><h1 class="font-title font-weight-bold text-center text-light mx-auto mt-5"><i class="fas fa-tools"></i>  Technology</h1></div>
+        <span class="underline underline-light mx-auto mb-5"></span>
+        <div class="row font-text text-light mx-auto">
+            <div class="px-4 text-justify">
+                <p>
+                    The IT market for software development requires the programmer to work with a large number of technologies, such as 
+                    <strong>coding, development processes, requirements, projects, database, information security, servers, images, 
+                    design, usability</strong> ... 
+                </p>
+                <p>
+                    So many prerequisites make learning and expecialization difficult, but this arduous process makes the 
+                    <strong>programmer</strong> a <strong>powerful business professional</strong> who, in addition to mastering several 
+                    IT areas, still ends up specializing in many other different businesses, being a real Swiss Army Knife to 
+                    <strong>solve problems</strong> and <strong>innovate</strong> with each <strong>solution</strong>. 
+                </p>
+                <p>
+                    Below, I describe my level in each of the technologies that I <span class="font-spotlight text-red">I have studied</span>, 
+                    <span class="font-spotlight text-yellow">I have basic knowledge</span>, <span class="font-spotlight text-blue">I use frequently</span>, 
+                    and <span class="font-spotlight text-green">I'm fluent</span>.
+                </p>
+            </div>
+        </div>
+        <div class="row font-spotlight text-center">
+            <div class="col-3 mt-3 mb-2">
+                <div class="row circle circle-red mx-auto"><h2 class="counter font-weight-bold mx-auto my-auto">27</h2></div>
+                <h6 class="text-red">I have studied</h6>
+            </div>
+            <div class="col-3 mt-3 mb-2">
+                <div class="row circle circle-yellow mx-auto"><h2 class="counter font-weight-bold mx-auto my-auto">23</h2></div>
+                <h6 class="text-yellow mt-1">Basic knowledge</h6>
+            </div>
+            <div class="col-3 mt-3 mb-2">
+                <div class="row circle circle-blue mx-auto"><h2 class="counter font-weight-bold mx-auto my-auto">12</h2></div>
+                <h6 class="text-blue mt-1">Issues solved</h6>
+            </div>
+            <div class="col-3 mt-3 mb-2">
+                <div class="row circle circle-green mx-auto"><h2 class="counter font-weight-bold mx-auto my-auto">67</h2></div>
+                <h6 class="text-green mt-1">Productive work</h6>
+            </div>
+        </div>
+    </div>
+    -->

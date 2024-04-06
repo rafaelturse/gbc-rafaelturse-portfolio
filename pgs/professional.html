@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Rafael Turse" />
+    <meta name="description" content="Rafael Turse - Desenvolvimento de Sistemas" />
+    <meta name="keywords"  content="rafael turse,desenvolvimento,sistemas" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../art/logo/logo-rafaelturse-favicon.svg" />
+
+    <link rel="stylesheet" href="../css/custom/components.css">
+    <link rel="stylesheet" href="../css/custom/font.css">
+    <link rel="stylesheet" href="../css/custom/image.css">
+    <link rel="stylesheet" href="../css/custom/menu.css">
+    <link rel="stylesheet" href="../css/custom/page.css">
+    <link rel="stylesheet" href="../css/custom/table.css">
+    <link rel="stylesheet" href="../css/custom/text.css">
+
+    <title>Rafael Turse</title>
+</head>
+<body id="top">
+    <!-- LOADER -->
+    <div id="overlay-loader" class="overlay">
+        <div class="d-flex justify-content-center h-100 vertical-center border">
+            <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <nav id="topMenu" class="navbar navbar-default navbar-dark navbar-expand-md fixed-top"> 
+        <div class="container">
+            <a class="navbar-brand mx-1" href="../index.html"><img class="img-fluid image-main-menu-logo mx-2" src="../art/logo/logo-rafaelturse-logo-white.svg" width="30"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto"></ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <ul class="navbar-nav mr-auto">
+                        <div id="menu_pages" class="btn-group btn-group-sm" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="pages" type="button" class="btn dropdown-toggle font-main-menu" data-toggle="dropdown"><i class="fas fa-copy"></i> Content</button>
+                                <div class="dropdown-menu" aria-labelledby="pages">
+                                    <a class="dropdown-item font-main-menu" href="#"><i class="fas fa-chess"></i> Articles</a>
+                                    <a class="dropdown-item font-main-menu" href="#"><i class="fas fa-palette"></i> Portfolio</a>
+                                    <a class="dropdown-item font-main-menu" href="systems.html"><i class="fas fa-bolt"></i> Systems</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li id="menu_articles" class="nav-item mx-2"><a class="nav-link font-main-menu" href="#"><i class="fas fa-chess"></i> Articles</a></li>
+                        <li id="menu_portfolio" class="nav-item mx-2"><a class="nav-link font-main-menu" href="#"><i class="fas fa-palette"></i> Portfolio</a></li>
+                        <li id="menu_professional" class="nav-item mx-2"><a class="nav-link font-main-menu" href="professional.html"><i class="fas fa-coffee"></i> Professional</a></li>
+                        <li id="menu_systems" class="nav-item mx-2"><a class="nav-link font-main-menu" href="systems.html"><i class="fas fa-bolt"></i> Systems</a></li>
+                        <li id="menu_technical" class="nav-item mx-2"><a class="nav-link font-main-menu" href="technical.html"><i class="fas fa-code"></i> Technical</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEAD -->
+    <div class="background-dark-main-header">
+        <div class="container-fluid">
+            <div class="container pt-5">
+                <div class="pt-5">
+                    <h1 class="font-text-title font-weight-bold text-title-light"><i class="fas fa-coffee mr-2"></i>Professional</h1>
+                    <h5 class="font-text-title text-subtitle-light mt-3">Information about education, career and profile</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="body-content">
+        <div class="container d-flex justify-content-end">
+            <div class="dropdown">
+                <button id="dropdownLanguage" class="btn btn-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                        <img id="flag-canada-translate-box-default" class="mr-2" src="../art/icon/flag/icon-flag-canada.svg" width="20px" />
+                        <span id="label-canada-translate-box-default" class="translate-label.english"></span>
+                        <img id="flag-brazil-translate-box-default" class="mr-2" src="../art/icon/flag/icon-flag-brazil.png" width="20px" />
+                        <span id="label-brazil-translate-box-default" class="translate-label.portuguese"></span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguage">
+                    <button class="dropdown-item" type="button" onclick="setLanguageToUrl('english', 'professional')">
+                        <span>
+                            <img class="mr-2" src="../art/icon/flag/icon-flag-canada.svg" width="20px" />
+                            <span class="translate-label.english"></span>
+                        </span>
+                    </button>
+                    <button class="dropdown-item" type="button" onclick="setLanguageToUrl('portuguese', 'professional')">
+                        <span>
+                            <img class="mr-2" src="../art/icon/flag/icon-flag-brazil.png" width="20px" />
+                            <span class="translate-label.portuguese"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRESENTATION -->
+        <div class="container background-light mb-5">
+            <!-- PERSONAL -->
+            <div class="d-flex justify-content-end mt-2 mr-3"></div>
+            <div id="personal" class="container mt-5">
+                <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-user-secret mr-2"></i>Personal</h1></div>
+                <span class="underline underline-dark mx-auto"></span>
+
+                <!-- PERSONAL MENU  -->    
+                <div class="font-skill tab-content borderless mt-5">
+                    <nav class="nav nav-pills flex-column flex-md-row font-pills-title">
+                        <a class="flex-md-fill text-md-center nav-link m-2 active" data-toggle="tab" href="#content-summedUp"><i class="fas fa-angle-right mr-2"></i>SUMMED UP</a>
+                        <a class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-about"><i class="fas fa-angle-right mr-2"></i>ABOUT</a>
+                        <a class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-place"><i class="fas fa-angle-right mr-2"></i>PLACE</a>
+                        <a class="flex-md-fill text-md-center nav-link m-2" data-toggle="tab" href="#content-contact"><i class="fas fa-angle-right mr-2"></i>CONTACT</a>
+                    </nav>
+
+                    <!-- SUMMED UP -->
+                    <div id="content-summedUp" class="tab-pane fade show active" role="tabpanel">
+                        <div class="px-4 pt-4 my-2 font-text text-describe-dark">
+                            <p>
+                                Brazilian, born in September 1989. Bachelor in Information Systems from São Judas Tadeu University - São Paulo, Brazil. 
+                                Programmer since 2011 with professional goal of becoming Systems Architect and Senior Programmer. Self-taught, language student, 
+                                guitarist passionate about music and recently started writing a book and discovered the wonders of being a writer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT -->
+                    <div id="content-about" class="tab-pane fade show" role="tabpanel">
+                        <div class="row border-0 mt-5 mx-3">
+                            <div class="row font-badge d-flex mx-0">
+                                <span class="badge badge-dark m-1">self-taught</span>
+                                <span class="badge badge-dark m-1">read, write books</span>
+                                <span class="badge badge-dark m-1">kindle</span>
+                                <span class="badge badge-dark m-1">to study</span>
+                                <span class="badge badge-dark m-1">development</span>
+                                <span class="badge badge-dark m-1">systems</span>
+                                <span class="badge badge-dark m-1">programming</span>
+                                <span class="badge badge-dark m-1">database</span>
+                                <span class="badge badge-dark m-1">web design</span>
+                                <span class="badge badge-dark m-1">design 3d</span>
+                                <span class="badge badge-dark m-1">to draw</span>
+                                <span class="badge badge-dark m-1">to paint</span>
+                                <span class="badge badge-dark m-1">drones</span>
+                                <span class="badge badge-dark m-1">robotic</span>
+                                <span class="badge badge-dark m-1">politics</span>
+                                <span class="badge badge-dark m-1">technology</span>
+                                <span class="badge badge-dark m-1">solve problems</span>
+                                <span class="badge badge-dark m-1">challenges</span>
+                                <span class="badge badge-dark m-1">architecture</span>
+                                <span class="badge badge-dark m-1">languages</span>
+                                <span class="badge badge-dark m-1">physics</span>
+                                <span class="badge badge-dark m-1">history</span>
+                                <span class="badge badge-dark m-1">religion</span>
+                                <span class="badge badge-dark m-1">astronomy</span>
+                                <span class="badge badge-dark m-1">philosophy</span>
+                                <span class="badge badge-dark m-1">psychology</span>
+                                <span class="badge badge-dark m-1">anthropology</span>
+                                <span class="badge badge-dark m-1">documentaries</span>
+                                <span class="badge badge-dark m-1">music</span>
+                                <span class="badge badge-dark m-1">dance</span>
+                                <span class="badge badge-dark m-1">instruments</span>
+                                <span class="badge badge-dark m-1">dj</span>
+                                <span class="badge badge-dark m-1">games</span>
+                                <span class="badge badge-dark m-1">collectibles</span>
+                                <span class="badge badge-dark m-1">series</span>
+                                <span class="badge badge-dark m-1">cooking</span>
+                                <span class="badge badge-dark m-1">gym</span>
+                                <span class="badge badge-dark m-1">swim</span>
+                                <span class="badge badge-dark m-1">hiking</span>
+                                <span class="badge badge-dark m-1">run</span>
+                                <span class="badge badge-dark m-1">bike</span>
+                                <span class="badge badge-dark m-1">travel</span>
+                                <span class="badge badge-dark m-1">cruise</span>
+                                <span class="badge badge-dark m-1">to drive</span>
+                                <span class="badge badge-dark m-1">beach</span>
+                                <span class="badge badge-dark m-1">sea</span>
+                                <span class="badge badge-dark m-1">sky</span>
+                                <span class="badge badge-dark m-1">mountains</span>
+                                <span class="badge badge-dark m-1">sights</span>
+                                <span class="badge badge-dark m-1">nature</span>
+                                <span class="badge badge-dark m-1">trees</span>
+                                <span class="badge badge-dark m-1">animals</span>
+                                <span class="badge badge-dark m-1">waterfall</span>
+                                <span class="badge badge-dark m-1">winter</span>
+                                <span class="badge badge-dark m-1">snow</span>
+                                <span class="badge badge-dark m-1">pizza</span>
+                                <span class="badge badge-dark m-1">ice cream</span>
+                                <span class="badge badge-dark m-1">woodwork</span>
+                                <span class="badge badge-dark m-1">mechanic</span>
+                                <span class="badge badge-dark m-1">poetry</span>
+                                <span class="badge badge-dark m-1">movie</span>
+                                <span class="badge badge-dark m-1">theater</span>
+                                <span class="badge badge-dark m-1">stand up</span>
+                                <span class="badge badge-dark m-1">photography</span>
+                                <span class="badge badge-dark m-1">sculptures</span>
+                                <span class="badge badge-dark m-1">my wife</span>
+                                <span class="badge badge-dark m-1">family</span>
+                                <span class="badge badge-dark m-1">accomplish</span>
+                                <span class="badge badge-dark m-1">to live</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLACE -->
+                    <div id="content-place" class="tab-pane fade show" role="tabpanel">
+                        <div class="row border-0 mt-5 mx-3">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.57290182926!2d-79.51814296517406!3d43.718155660701214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON%2C+Canada!5e0!3m2!1sen!2sbr!4v1564700079447!5m2!1sen!2sbr" 
+                                width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div id="content-contact" class="tab-pane fade show m-5" role="tabpanel">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center mt-3">
+                                <a href="mailto:rafaelturse@hotmail.com" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-email.svg" width="64"></a>
+                                <a><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-whatsup.svg" title="+55 11 9 4618 8509" width="64"></a>
+                                <a><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-skype.svg" title="rtr_rib@hotmail.com" width="64"></a>
+                                <a href="https://twitter.com/rafaelturse" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-twitter.svg" width="64"></a>
+                                <a href="https://www.facebook.com/rafaelturse" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-facebook.svg" width="64"></a>
+                                <a href="https://www.linkedin.com/in/rafaelturse" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-linkedin.svg" width="64"></a>
+                                <a href="https://github.com/rafaelturse" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-git.svg" width="64"></a>
+                                <a href="https://behance.net/rafaelturse" target="_blank"><img class="img-fluid image-zoon-icon mr-3" src="../art/icon/social/social-behance.svg" width="64"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDUCATION TABLE -->
+        <div id="education" class="d-flex justify-content-end mt-5 mr-3"><a href="#top"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+        <div class="container mt-5">
+            <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-user-graduate mr-2"></i>Education</h1></div>
+            <span class="underline underline-dark mx-auto"></span>
+
+            <!-- SCHOOLING -->
+            <div class="table-responsive my-5">
+                <table class="table table-sm table-borderless table-hover thead-dark text-content-dark">
+                    <thead>
+                        <tr>
+                            <th class="col-subject"><span class="font-skill-title text-skill text-light ml-3"><i class="fas fa-graduation-cap mr-2"></i>Subject</span></th>
+                            <th class="col-hours"><span class="font-skill-title text-skill text-light"><i class="fas fa-clock mr-2"></i>Hours</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>University Graduate</h6></span></td></tr>
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalInformationSystems">
+                            <td><span class="text-skill ml-3">Information Systems</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">2012 - 2016</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalInformationSystems -->
+                        <div id="modalInformationSystems" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">University Graduate</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto"><img class="card-img img-responsive p-3" src="../art/course/course-saojudas.png" height="200" width="200"></div>
+                                        <div class="row d-flex justify-content-end mr-1"><small class="text-muted text-hover">2012 - 2016</small></div>
+                                        <div class="row ml-1">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-globe-americas mr-2"></i>Information Systems</h2>
+                                        </div>
+                                        <div class="row ml-1"><small class="text-muted text-hover">São Judas Tadeu University</small></div>
+                                        <div class="row no-gutters my-auto mx-auto">
+                                            <div class="row mt-2 p-3">
+                                                <p class="card-text text-describe-dark">
+                                                    Bachelor of Information Systems from São Judas Tadeu University in São Paulo - SP, Brazil. In the work of conclusion of 
+                                                    course, was developed a mobile application for the Android platform that managed chords of songs with diverse functions 
+                                                    and interactivity with the user.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>Language</h6></span></td></tr>
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalPortuguese">
+                            <td><span class="text-skill ml-3">Portuguese</span></td>
+                            <td><div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"></div></div></td>
+                        </tr>
+
+                        <!-- MODAL - modalPortuguese -->
+                        <div id="modalPortuguese" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Language</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto"><img class="card-img img-responsive p-3" src="../art/icon/language/language-portuguese.svg" height="200" width="200"></div>
+                                        <div class="row d-flex justify-content-end mr-1"><small class="text-muted text-hover">1989 - Today</small></div>
+                                        <div class="row ml-1">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-globe-americas mr-2"></i>Portuguese</h2>
+                                        </div>
+                                        <div class="row ml-1"><small class="text-muted text-hover">Brazil</small></div>
+                                        <div class="mt-4">
+                                                <h5>Fluence in Brazilian Portuguese</h5> 
+                                                <div class="progress"><div class="progress-bar bg-success w-100" role="progressbar"><strong>100%</strong> </div></div>
+                                            </div>
+                                        <div class="row no-gutters my-auto mx-auto">
+                                            <div class="row mt-2 p-3">
+                                                <p class="card-text text-describe-dark">
+                                                    I was born and raised in Brazil, I'm Brazilian. I lived in this beautiful country until the age of 30, so my mother 
+                                                    language is Brazilian Portuguese.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalEnglish">
+                            <td><span class="text-skill ml-3">English</span></td>
+                            <td><div class="progress"><div class="progress-bar bg-info w-75" role="progressbar"></div></div></td>
+                        </tr>
+
+                        <!-- MODAL - modalEnglish -->
+                        <div id="modalEnglish" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Language</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto"><img class="card-img img-responsive p-3" src="../art/icon/language/language-english.svg" height="200" width="200"></div>
+                                        <div class="row d-flex justify-content-end mr-1"><small class="text-muted text-hover">2014 - Today</small></div>
+                                        <div class="row ml-1">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-globe-americas mr-2"></i>English</h2>
+                                        </div>
+                                        <div class="row ml-1"><small class="text-muted text-hover">United States, England and Canada</small></div>
+                                        <div class="mt-4">
+                                                <h5>Fluence in English</h5> 
+                                                <div class="progress"><div class="progress-bar bg-info w-75"" role="progressbar"><strong>75%</strong> </div></div>
+                                            </div>
+                                        <div class="row no-gutters my-auto mx-auto">
+                                            <div class="row mt-2 p-3">
+                                                <p class="card-text text-describe-dark">
+                                                    My favorite foreign language. My second language. I am very easy to learn English, easy to understand, listen to, 
+                                                    speak and write. I took several courses at Cultura Inglesa in São Paulo and also studied online courses at Udemy.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalFrench">
+                            <td><span class="text-skill ml-3">French</span></td>
+                            <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                        </tr>
+
+                        <!-- MODAL - modalFrench -->
+                        <div id="modalFrench" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Language</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto"><img class="card-img img-responsive p-3" src="../art/icon/language/language-french.svg" height="200" width="200"></div>
+                                        <div class="row d-flex justify-content-end mr-1"><small class="text-muted text-hover">2018 - Today</small></div>
+                                        <div class="row ml-1">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-globe-americas mr-2"></i>French</h2>
+                                        </div>
+                                        <div class="row ml-1"><small class="text-muted text-hover">Canada and France</small></div>
+                                        <div class="mt-4">
+                                            <h5>Fluence in French</h5> 
+                                            <div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"><strong>25%</strong></div></div>
+                                        </div>
+                                        <div class="row no-gutters my-auto mx-auto">
+                                            <div class="row mt-2 p-3">
+                                                <p class="card-text text-describe-dark">
+                                                    I started to study French recently, with books and audio-CDs. I also bought an online course and I'm 
+                                                    excited about the language, it has many similarities with Portuguese.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalSpanish">
+                            <td><span class="text-skill ml-3">Spanish</span></td>
+                            <td><div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"></div></div></td>
+                        </tr>
+
+                        <!-- MODAL - modalSpanish -->
+                        <div id="modalSpanish" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Language</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mx-auto my-auto"><img class="card-img img-responsive p-3" src="../art/icon/language/language-spanish.svg" height="200" width="200"></div>
+                                    <div class="row d-flex justify-content-end mr-1"><small class="text-muted text-hover">2001 - 2007</small></div>
+                                    <div class="row ml-1">
+                                        <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-globe-americas mr-2"></i>Spanish</h2>
+                                    </div>
+                                    <div class="row ml-1"><small class="text-muted text-hover">Spain</small></div>
+                                    <div class="mt-4">
+                                        <h5>Fluence in Spanish</h5> 
+                                        <div class="progress"><div class="progress-bar bg-danger w-25" role="progressbar"><strong>25%</strong></div></div>
+                                    </div>
+                                    <div class="row no-gutters my-auto mx-auto">
+                                        <div class="row mt-2 p-3">
+                                            <p class="card-text text-describe-dark">
+                                                This one I studied at school and never practiced much, although living among the Latin people and similarities 
+                                                with the Portuguese language, my Spanish is very basic and rusty.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>Frontend</h6></span></td></tr>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalTypeScriptStarting">
+                            <td><span class="text-skill ml-3">Starting with TypeScript</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">8 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalTypeScriptStarting -->
+                        <div id="modalTypeScriptStarting" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Frontend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-ts.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Starting with TypeScript</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                A presentation of the powerful TypeScript language, demonstrating the main aspects and their application.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>8 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>sep-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/certs/HOPBUD1TYR/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-HOPBUD1TYR.png" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalJavaScriptStarting">
+                            <td><span class="text-skill ml-3">Starting with JavaScript</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">6 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalJavaScriptStarting -->
+                        <div id="modalJavaScriptStarting" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Frontend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-js.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Starting with JavaScript</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                A presentation of the powerful Javascript language, demonstrating the main aspects and their application.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>6 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>sep-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/certs/SZ6LX7M5BW/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-AW-SZ6LX7M5BW.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalBootstrap4">
+                            <td><span class="text-skill ml-3">Bootstrap 4 - Complete, Practical and Responsive + 2 Projects</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">11.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalBootstrap4 -->
+                        <div id="modalBootstrap4" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Frontend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-bootstrap.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Bootstrap 4 - Complete, Practical and Responsive + 2 Projects</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Create Responsive Design for dashboards, product marketing, and applications with this hands-on course.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>11.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>apr-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-IJPOB9W1/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/bootstrap-4-completo/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-IJPOB9W1.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalJSNinja">
+                            <td><span class="text-skill ml-3">Javascript Ninja</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">42.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalJSNinja -->
+                        <div id="modalJSNinja" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Frontend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-js.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Javascript Ninja</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                The course to learn REAL JavaScript!
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>42.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>jul-2020</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-5bbc35ec-9846-43b8-aba6-ca4b88c91bff/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/curso-javascript-ninja/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-5bbc35ec-9846-43b8-aba6-ca4b88c91bff.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>Backend</h6></span></td></tr>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalNodeJSMongoDB">
+                            <td><span class="text-skill ml-3">NodeJS and MongoDB</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">15.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalNodeJSMongoDB -->
+                        <div id="modalNodeJSMongoDB" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Backend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-nodejs.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">NodeJS and MongoDB</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Learn how to create websites and web systems using the NodeJS platform and the MongoDB database
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>15.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>feb-2021</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-112c43d1-b059-4e18-ae02-60ad73a5b0ba/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-nodejs/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-112c43d1-b059-4e18-ae02-60ad73a5b0ba.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalSpringExperts">
+                            <td><span class="text-skill ml-3">Spring Framework Expert</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">120 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalSpringExperts -->
+                        <div id="modalSpringExperts" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Backend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-spring-experts.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Spring Framework Expert</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Development of a beer sales system with Spring MVC, Spring Boot, Thymeleaf and Bootstrap.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>120 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>aug-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/certs/FW246DZIH2/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.algaworks.com/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-AW-FW246DZIH2.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalSpring1">
+                            <td><span class="text-skill ml-3">Spring Boot & MVC with Thymeleaf</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">8.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalSpring1 -->
+                        <div id="modalSpring1" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Backend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/icon-spring-boot-thymeleaf.svg"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Spring Boot & MVC with Thymeleaf</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                First-step Web development course with Spring-Boot, MVC, JPA, Thymeleaf and Heroku.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>8.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>may-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-H0G0QEEF/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/spring-boot-mvc-com-thymeleaf/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-H0G0QEEF.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalSpring2">
+                            <td><span class="text-skill ml-3">Spring Framework 5 e Spring Boot 2</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">7.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalSpring2 -->
+                        <div id="modalSpring2" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Backend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-spring-framework.svg"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Spring Framework 5 e Spring Boot 2</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Learn Spring Framework 5, Spring Boot 2 with Wildfly 11 (Using Datasource), Spring Data with Mongo and MySQL.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>7.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>may-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-QTC9JIJ0/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/spring-framework-5-spring-boot-2/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-QTC9JIJ0.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#java1">
+                            <td><span class="text-skill ml-3">FULL Java 2019 Object Oriented Programming + Projects</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">41.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - java1 -->
+                        <div id="java1" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Backend</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-java.svg"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">FULL Java 2019 Object Oriented Programming + Projects</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Most didactic and complete course of Java and OO. Projects with UML, JDBC, JavaFX, Spring Boot, MySQL, MongoDB and more.
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>41.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>apr-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-Z9BO5PN9/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/java-curso-completo/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-Z9BO5PN9.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="table-subject"><td colspan="2"><span class="text-skill text-center"><h6>DevOps</h6></span></td></tr>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalDockerEssentialTool">
+                            <td><span class="text-skill ml-3">Docker: Essential Tool for Developers</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">5.5 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalDockerEssentialTool -->
+                        <div id="modalDockerEssentialTool" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">DevOps</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-docker.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Docker: Essential Tool for Developers</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Learn how to create complete professional environments with Docker, which is the industry's leading container technology!
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>5.5 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>oct-2019</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-QYLSSW9H/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/curso-docker/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-QYLSSW9H.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <tr class="cursor-link" data-toggle="modal" data-target="#modalGitNinja">
+                            <td><span class="text-skill ml-3">Git and GitHub Ninja</span></td>
+                            <td><span class="d-flex justify-content-center text-describe-dark">9 hours</span></td>
+                        </tr>
+
+                        <!-- MODAL - modalGitNinja -->
+                        <div id="modalGitNinja" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">DevOps</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mx-auto my-auto d-flex justify-content-center"><img class="card-img img-responsive image-education" src="../art/course/course-git.png"></div>
+                                        <div class="row d-flex justify-content-center ml-1 mt-5">
+                                            <h2 class="text-subtitle-dark font-text-title font-weight-bold">Git and GitHub Ninja</h2>
+                                        </div>
+                                        <div>
+                                            <small class="card-text text-describe-dark px-3">
+                                                Learn how to use git to version your projects and work as a team!
+                                            </small>
+                                        </div>
+                                        <ul>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <li><small class="text-muted">Duration: <strong>9 hours of video</strong></small></li>
+                                                    <li><small class="text-muted">Language: <strong>Brazilian Portuguese</strong></small></li>
+                                                    <li><small class="text-muted">Conclusion Date: <strong>apr-2020</strong></small></li>
+                                                </div>
+                                                <div class="col">
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/certificate/UC-9f4ffc10-ba3c-480c-8ae8-99e483a61dcc/" target="_blank">Certificate of Completion</a></small></li>
+                                                    <li><small><i class="mark-indicator-dark fas fa-link mr-2"></i><a class="text-muted" href="https://www.udemy.com/course/git-e-github-ninja/" target="_blank">Course page</a></small></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <div><img src="../art/certificate/certificate-UC-9f4ffc10-ba3c-480c-8ae8-99e483a61dcc.jpg" class="img-fluid" alt="Responsive image"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal"><i class="fas fa-angle-left mr-2"></i>Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- CAREER -->
+        <div id="career" class="d-flex justify-content-end mt-5 mr-3"><a href="#top"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+        <div class="container font-text mt-5">
+            <div class="row"><h1 class="text-title-dark font-text-title font-weight-bold mx-auto"><i class="fas fa-briefcase mr-2"></i>Career</h1></div>
+            <span class="underline underline-dark mx-auto mb-4"></span>
+
+            <div id="technologyTimeLineChart" class="d-flex justify-content-center mt-5 mb-3"></div>
+                
+            <!-- CAREER EXTRA CONTEXT -->
+            <div class="container extra-area">
+                <div class="pt-3 pr-1"> 
+                    <h5 class="d-flex justify-content-end text-light"> <i class="fas fa-hourglass-start"></i></h5>
+                </div>
+                <div class="p-4">
+                    <div id="careerExtraContent" class="accordion">
+                        <div>
+                            <div id="careerSummary">
+                                <i class="fas fa-circle fa-xs text-light"></i> 
+                                <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#careerSummaryText" aria-expanded="true" aria-controls="careerSummaryText">
+                                    <h5 class="text-title-light font-text-title">Summary</h5>
+                                </a>
+                            </div>
+                            <div id="careerSummaryText" class="collapse font-text text-describe-light" aria-labelledby="careerSummary" data-parent="#careerExtraContent">
+                                <span class="underline-separator underline-separator-light mx-auto mb-4"></span>
+                                <div class="px-2 mb-5">
+                                    <p class="mb-4">
+                                        <i class="fas fa-headset icon-text-light red mr-2"></i> My gateway to the IT world was through 
+                                        <em>technical support</em> to <em>broadband internet</em>.
+                                    </p>
+                                    <p class="mb-4">
+                                        <i class="fas fa-running icon-text-light yellow mr-2"></i> I went on with <em>technical support</em> for bank branches and then 
+                                        repairing and configuring <em>programs and parts for computers</em>,  <em>printers</em>, <em>networks</em>, in addition to providing 
+                                        support to internal store customers to operate the system correctly.
+                                    </p>
+                                    <p class="mb-4">
+                                        <i class="fas fa-cogs icon-text-light blue mr-2"></i> I then became an  <em>ERP programmer</em>, 
+                                        using <span class="badge badge-light m-1">Delphi</span> and <span class="badge badge-light m-1">SQL</span>. After a few years 
+                                        I also worked with <em>Business Intelligence</em> and <span class="badge badge-light m-1">ETL</span>, making advanced use of 
+                                        database tools.
+                                    </p>
+                                    <p class="mb-4">
+                                        <i class="fas fa-code icon-text-light green mr-2"></i> When I started with <span class="badge badge-light m-1">Java</span>, 
+                                        I mainly used <span class="badge badge-light m-1">JSP</span>, <span class="badge badge-light m-1">JSF</span>, 
+                                        <span class="badge badge-light m-1">Spring</span> and <span class="badge badge-light m-1">DevOps</span> to develop 
+                                        <em>WEB applications</em>, becoming a <em">backend programming professional</em> and after a while, a 
+                                        <span class="badge badge-light m-1">Fullstack developer</span>, where I work strongly with the latest in 
+                                        <span class="badge badge-light m-1">Java</span> and <span class="badge badge-light m-1">Javascript</span>.
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-paint-brush icon-text-light purple mr-2"></i> Currently I have invested a lot in <span class="badge badge-light m-1">design</span>, studying technologies of 
+                                        <span class="badge badge-light m-1">usability</span>, <span class="badge badge-light m-1">design</span>, 
+                                        <span class="badge badge-light m-1">frontend</span>, <span class="badge badge-light m-1">motion design</span> and 
+                                        <span class="badge badge-light m-1">digital illustration</span> for logo animations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="careerTechnologies">
+                                <i class="fas fa-circle fa-xs text-light"></i> 
+                                <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#careerTechnologiesText" aria-expanded="false" aria-controls="careerTechnologiesText">
+                                    <h5 class="text-title-light font-text-title">Technologies in jobs</h5>
+                                </a>
+                            </div>
+                            <div id="careerTechnologiesText" class="collapse font-text text-describe-light" aria-labelledby="careerTechnologies" data-parent="#careerExtraContent">
+                                <div class="px-2 mb-5">
+                                    <span class="underline-separator underline-separator-light mx-auto mb-4"></span>
+                                    <p class="card-text text-describe-dark">
+                                        <span class="badge badge-light m-1">Delphi</span>
+                                        <span class="badge badge-light m-1">Java</span>
+                                        <span class="badge badge-light m-1">JSP</span>
+                                        <span class="badge badge-light m-1">JSF</span>
+                                        <span class="badge badge-light m-1">Spring Boot</span>
+                                        <span class="badge badge-light m-1">MVC</span>
+                                        <span class="badge badge-light m-1">Reflection</span>
+                                        <span class="badge badge-light m-1">HTML</span>
+                                        <span class="badge badge-light m-1">CSS</span>
+                                        <span class="badge badge-light m-1">Bootstrap</span>
+                                        <span class="badge badge-light m-1">Javascript</span>
+                                        <span class="badge badge-light m-1">JQuery</span>
+                                        <span class="badge badge-light m-1">Ajax</span>
+                                        <span class="badge badge-light m-1">XHTML</span>
+                                        <span class="badge badge-light m-1">XML</span>
+                                        <span class="badge badge-light m-1">Primefaces</span>
+                                        <span class="badge badge-light m-1">Mentawai</span>
+                                        <span class="badge badge-light m-1">Apache Shiro</span>
+                                        <span class="badge badge-light m-1">JDBC</span>
+                                        <span class="badge badge-light m-1">JPA</span>
+                                        <span class="badge badge-light m-1">Spring Data-JPA</span>
+                                        <span class="badge badge-light m-1">Hibernate</span>
+                                        <span class="badge badge-light m-1">Hibernate Envers</span>
+                                        <span class="badge badge-light m-1">Criteria</span>
+                                        <span class="badge badge-light m-1">HQL</span>
+                                        <span class="badge badge-light m-1">JPQL</span>
+                                        <span class="badge badge-light m-1">Flyway</span>
+                                        <span class="badge badge-light m-1">Apache Derby (JavaDB)</span>
+                                        <span class="badge badge-light m-1">DBeaver</span>
+                                        <span class="badge badge-light m-1">MySQL</span>
+                                        <span class="badge badge-light m-1">SQL Server</span>
+                                        <span class="badge badge-light m-1">Oracle SQL Developer</span>
+                                        <span class="badge badge-light m-1">Integration Services</span>
+                                        <span class="badge badge-light m-1">Rave Reports</span>
+                                        <span class="badge badge-light m-1">Apache POI</span>
+                                        <span class="badge badge-light m-1">Jasper Reports</span>  
+                                        <span class="badge badge-light m-1">WinSCP</span>
+                                        <span class="badge badge-light m-1">Tortoise SVN</span>
+                                        <span class="badge badge-light m-1">Git</span>
+                                        <span class="badge badge-light m-1">GitLab</span>
+                                        <span class="badge badge-light m-1">Jenkins</span>
+                                        <span class="badge badge-light m-1">Tomcat</span>
+                                        <span class="badge badge-light m-1">WildFly</span>
+                                        <span class="badge badge-light m-1">Websphere</span>
+                                        <span class="badge badge-light m-1">JUnit</span>
+                                        <span class="badge badge-light m-1">Log4J</span>
+                                        <span class="badge badge-light m-1">Quartz</span>
+                                        <span class="badge badge-light m-1">Spring Batch</span>
+                                        <span class="badge badge-light m-1">NetBeans</span>
+                                        <span class="badge badge-light m-1">Eclipse</span>
+                                        <span class="badge badge-light m-1">IntelliJ IDEA</span>
+                                        <span class="badge badge-light m-1">STS Spring Tools Suite</span>
+                                        <span class="badge badge-light m-1">REST / Restful API</span>
+                                        <span class="badge badge-light m-1">Postman</span>
+                                        <span class="badge badge-light m-1">Apache Maven</span>
+                                        <span class="badge badge-light m-1">Docker</span>
+                                        <span class="badge badge-light m-1">Micro Services</span>
+                                        <span class="badge badge-light m-1">Google Cloud Platform</span>
+                                        <span class="badge badge-light m-1">Google MAPs API</span>
+                                        <span class="badge badge-light m-1">Fedora Linux</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- data-aos="fade-in" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-offset="0" data-aos-anchor-placement="center-bottom" -->
+                        <div>
+                            <div id="numbers">
+                                <i class="fas fa-circle fa-xs text-light"></i> 
+                                <a id="startCounting" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#numbersText" aria-expanded="false" aria-controls="numbersText">
+                                    <h5 class="text-title-light font-text-title">Numbers</h5>
+                                </a>
+                            </div>
+                            <div id="numbersText" class="collapse font-text text-describe-light" aria-labelledby="numbers" data-parent="#careerExtraContent">
+                                <div class="px-2 mb-5">
+                                    <span class="underline-separator underline-separator-light mx-auto mb-4"></span>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">coded lines</h6></div>
+                                            <div><h1 id="codedLines" class="d-flex justify-content-center font-title blue"><strong>3245874</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">coffee cups</h6></div>
+                                            <div><h1 id="coffeeCups" class="d-flex justify-content-center font-title red"><strong>1897</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">studied hours</h6></div>
+                                            <div><h1 id="studiedHours" class="d-flex justify-content-center font-title green"><strong>21458</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">energy drinks</h6></div>
+                                            <div><h1 id="energyDrinks" class="d-flex justify-content-center font-title yellow"><strong>2731</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">technologies</h6></div>
+                                            <div><h1 id="technologies" class="d-flex justify-content-center font-title green"><strong>134</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">animated keys</h6></div>
+                                            <div><h1 id="animatedKeys" class="d-flex justify-content-center font-title yellow"><strong>154478</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">fixed bugs</h6></div>
+                                            <div><h1 id="bugsFixed" class="d-flex justify-content-center font-title red"><strong>1487255</strong></h1></div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-3">
+                                            <div><h6 class="d-flex justify-content-center text-light font-title">stylished tags</h6></div>
+                                            <div><h1 id="tagsStylished" class="d-flex justify-content-center font-title blue"><strong>98153274</strong></h1></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-fcc.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">apr/2019 - today</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Java Developer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Fundação Carlos Chagas</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <div class="col-12">
+                                        <p class="card-text text-describe-dark">
+                                            <span class="badge badge-dark m-1">Full Stack</span> development of WEB Applications with 
+                                            <span class="badge badge-dark m-1">Micro Services</span>
+                                            <span class="badge badge-dark m-1">Angular</span>
+                                            <span class="badge badge-dark m-1">NgRx</span>
+                                            <span class="badge badge-dark m-1">Java 7</span>
+                                            <span class="badge badge-dark m-1">Java 8</span>
+                                            <span class="badge badge-dark m-1">MVC</span>
+                                            <span class="badge badge-dark m-1">HTML5</span>
+                                            <span class="badge badge-dark m-1">Bootstrap 4</span>
+                                            <span class="badge badge-dark m-1">CSS3</span>
+                                            <span class="badge badge-dark m-1">JavaScript</span>
+                                            <span class="badge badge-dark m-1">JQuery</span>
+                                            <span class="badge badge-dark m-1">JSP</span>
+                                            <span class="badge badge-dark m-1">Mentawai</span>
+                                            <span class="badge badge-dark m-1">XHTML</span>
+                                            <span class="badge badge-dark m-1">JDBC</span>
+                                            <span class="badge badge-dark m-1">JPA</span>
+                                            <span class="badge badge-dark m-1">Hibernate</span>
+                                            <span class="badge badge-dark m-1">Criteria</span>
+                                            <span class="badge badge-dark m-1">JPQL</span>
+                                            <span class="badge badge-dark m-1">DBeaver</span>
+                                            <span class="badge badge-dark m-1">MySQL</span>
+                                            <span class="badge badge-dark m-1">SQL Server</span>
+                                            <span class="badge badge-dark m-1">Tortoise SVN</span>
+                                            <span class="badge badge-dark m-1">Jenkins</span>
+                                            <span class="badge badge-dark m-1">GitLab</span>
+                                            <span class="badge badge-dark m-1">Jasper Reports</span>
+                                            <span class="badge badge-dark m-1">JUnit</span>
+                                            <span class="badge badge-dark m-1">Log4J</span>
+                                            <span class="badge badge-dark m-1">Quartz</span>
+                                            <span class="badge badge-dark m-1">Tomcat</span>
+                                            <span class="badge badge-dark m-1">Docker</span>
+                                            <span class="badge badge-dark m-1">REST / Restful API</span>
+                                            <span class="badge badge-dark m-1">Postman</span>
+                                            <span class="badge badge-dark m-1">WinSCP</span>
+                                            <span class="badge badge-dark m-1">Spring Boot</span>
+                                            <span class="badge badge-dark m-1">Spring Data-JPA</span>
+                                            <span class="badge badge-dark m-1">IntelliJ IDEA</span> and
+                                            <span class="badge badge-dark m-1">Eclipse</span>
+                                        </p>
+
+                                        <strong>Main Projects:</strong>
+                                        <ul class="text-describe-dark">
+                                            <li>Implementation of Public Tender Systems;</li>
+                                            <li>Portals;</li>
+                                            <li>Systems of billet generation, remittance files and return banking files handling.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6249897670828!2d-46.7178206850219!3d-23.58190843467261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56fb7f2979bf%3A0x17e0646c2cb7d6a1!2sFunda%C3%A7%C3%A3o%20Carlos%20Chagas!5e0!3m2!1sen!2sca!4v1587681579030!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-samsung.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">oct/2018 - apr/2019</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Java Developer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Samsung SDS Cello Logistics (Latin America)</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <div class="col-12">
+                                        <p class="card-text text-describe-dark">
+                                            <span class="badge badge-dark m-1">Full Stack</span> development of WEB Applications with
+                                            <span class="badge badge-dark m-1">Google Cloud Platform</span>
+                                            <span class="badge badge-dark m-1">Google MAPs API</span>
+                                            <span class="badge badge-dark m-1">Micro Services</span>
+                                            <span class="badge badge-dark m-1">Angular</span>
+                                            <span class="badge badge-dark m-1">Java 8</span>
+                                            <span class="badge badge-dark m-1">MVC</span>
+                                            <span class="badge badge-dark m-1">HTML5</span>
+                                            <span class="badge badge-dark m-1">CSS3</span>
+                                            <span class="badge badge-dark m-1">Bootstrap 4</span>
+                                            <span class="badge badge-dark m-1">JavaScript</span>
+                                            <span class="badge badge-dark m-1">Ajax</span>
+                                            <span class="badge badge-dark m-1">XML</span>
+                                            <span class="badge badge-dark m-1">Apache Maven</span>
+                                            <span class="badge badge-dark m-1">JSF</span>
+                                            <span class="badge badge-dark m-1">Primefaces</span>
+                                            <span class="badge badge-dark m-1">XHTML</span>
+                                            <span class="badge badge-dark m-1">JDBC</span>
+                                            <span class="badge badge-dark m-1">JPA</span>
+                                            <span class="badge badge-dark m-1">Hibernate</span>
+                                            <span class="badge badge-dark m-1">Criteria</span>
+                                            <span class="badge badge-dark m-1">JPQL</span>
+                                            <span class="badge badge-dark m-1">Oracle SQL Developer</span>
+                                            <span class="badge badge-dark m-1">Tortoise SVN</span>
+                                            <span class="badge badge-dark m-1">Jasper Reports</span>
+                                            <span class="badge badge-dark m-1">JUnit</span>
+                                            <span class="badge badge-dark m-1">Log4J</span>
+                                            <span class="badge badge-dark m-1">Quartz</span>
+                                            <span class="badge badge-dark m-1">WildFly</span>
+                                            <span class="badge badge-dark m-1">Docker</span>
+                                            <span class="badge badge-dark m-1">Spring Boot</span>
+                                            <span class="badge badge-dark m-1">Spring Data-JPA</span> and
+                                            <span class="badge badge-dark m-1">Eclipse</span>
+                                        </p>
+
+                                        <strong>Main Projects:</strong>
+                                        <ul class="text-describe-dark">
+                                            <li>Mais Brasil - File Reader;</li>
+                                            <li>WMS - Warehouse Management;</li>
+                                            <li>Gerdau - Tracking of Bucket.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4326809394906!2d-46.70375408535436!3d-23.624670869817578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50dc8b722e33%3A0x67affaf291c79aa0!2sSamsung%20SDS%20Global%20SCL%20Latin%20America!5e0!3m2!1sen!2sca!4v1587682936521!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-magna.jpg" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">jul/2017 - oct/2018</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Java Analyst Programmer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Magna Sistemas</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <div class="col-12">
+                                        <p class="card-text text-describe-dark">
+                                            <span class="badge badge-dark m-1">Full Stack</span> 
+                                            Development of WEB Applications with  
+                                            <span class="badge badge-dark m-1">Angular</span>
+                                            <span class="badge badge-dark m-1">Java 8</span>
+                                            <span class="badge badge-dark m-1">Reflection</span>
+                                            <span class="badge badge-dark m-1">MVC</span>
+                                            <span class="badge badge-dark m-1">Apache Maven</span>
+                                            <span class="badge badge-dark m-1">JSF</span>
+                                            <span class="badge badge-dark m-1">Primefaces</span>
+                                            <span class="badge badge-dark m-1">XHTML</span>
+                                            <span class="badge badge-dark m-1">XML</span>
+                                            <span class="badge badge-dark m-1">HTML</span>
+                                            <span class="badge badge-dark m-1">CSS</span>
+                                            <span class="badge badge-dark m-1">Javascript</span>
+                                            <span class="badge badge-dark m-1">Ajax</span>
+                                            <span class="badge badge-dark m-1">JDBC</span>
+                                            <span class="badge badge-dark m-1">JPA</span>
+                                            <span class="badge badge-dark m-1">Hibernate</span>
+                                            <span class="badge badge-dark m-1">Criteria</span>
+                                            <span class="badge badge-dark m-1">JPQL</span>
+                                            <span class="badge badge-dark m-1">MySQL</span>
+                                            <span class="badge badge-dark m-1">SQL Server</span>
+                                            <span class="badge badge-dark m-1">Apache Shiro</span>
+                                            <span class="badge badge-dark m-1">Apache POI</span>
+                                            <span class="badge badge-dark m-1">Jasper Reports</span>
+                                            <span class="badge badge-dark m-1">JUnit</span>
+                                            <span class="badge badge-dark m-1">Log4J</span>
+                                            <span class="badge badge-dark m-1">Apache Derby (JavaDB)</span>
+                                            <span class="badge badge-dark m-1">GitLab</span>
+                                            <span class="badge badge-dark m-1">SVN</span>
+                                            <span class="badge badge-dark m-1">Hibernate Envers</span>
+                                            <span class="badge badge-dark m-1">WildFly</span>
+                                            <span class="badge badge-dark m-1">Websphere</span>
+                                            <span class="badge badge-dark m-1">Spring Boot</span>
+                                            <span class="badge badge-dark m-1">Spring Data-JPA</span>,
+                                            <span class="badge badge-dark m-1">Spring Batch</span> and 
+                                            <span class="badge badge-dark m-1">Eclipse</span>
+                                        </p>
+
+                                        <strong>Main Projects:</strong>
+                                        <ul class="text-describe-dark">
+                                            <li>Electronic Bulletin of Occurrence of the Civil Police Intelligence Department - DIPOL of State of São Paulo;</li>
+                                            <li>TOTVS-RH Integration for IBM Case Manager at JBS Friboi;</li>
+                                            <li>Implementation of the Integrated System of Fines of Detran (State Department of Transit of São Paulo).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0288204798085!2d-46.686625485355776!3d-23.567408367699958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5776774592a9%3A0xafad307805963e69!2sMagna%20Sistemas!5e0!3m2!1sen!2sca!4v1587683757123!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-mmcs.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">mar/2016 - jun/2017</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Java Developer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">MMCS Sistemas</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        <span class="badge badge-dark m-1">Full Stack</span> 
+                                        Development of Web Application for Freight Forwarding with 
+                                        <span class="badge badge-dark m-1">Java 8</span>
+                                        <span class="badge badge-dark m-1">Reflection</span>
+                                        <span class="badge badge-dark m-1">Apache Maven</span>
+                                        <span class="badge badge-dark m-1">JSF</span>
+                                        <span class="badge badge-dark m-1">Primefaces</span>
+                                        <span class="badge badge-dark m-1">HTML</span>
+                                        <span class="badge badge-dark m-1">CSS</span>
+                                        <span class="badge badge-dark m-1">Javascript</span>
+                                        <span class="badge badge-dark m-1">Ajax</span>
+                                        <span class="badge badge-dark m-1">XHTML</span>
+                                        <span class="badge badge-dark m-1">XML</span>
+                                        <span class="badge badge-dark m-1">MVC</span>
+                                        <span class="badge badge-dark m-1">JUnit</span>
+                                        <span class="badge badge-dark m-1">Log4J</span>
+                                        <span class="badge badge-dark m-1">JPA</span>
+                                        <span class="badge badge-dark m-1">Hibernate</span>
+                                        <span class="badge badge-dark m-1">Criteria</span>
+                                        <span class="badge badge-dark m-1">HQL</span>
+                                        <span class="badge badge-dark m-1">MySQL</span>
+                                        <span class="badge badge-dark m-1">Flyway</span>
+                                        <span class="badge badge-dark m-1">Tomcat</span>
+                                        <span class="badge badge-dark m-1">WildFly</span>
+                                        <span class="badge badge-dark m-1">Apache POI</span>
+                                        <span class="badge badge-dark m-1">Jasper Reports</span>  
+                                        <span class="badge badge-dark m-1">NetBeans</span> and
+                                        <span class="badge badge-dark m-1">Fedora Linux</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.641546398695!2d-46.64348698535632!3d-23.545391566887112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585210199c93%3A0x609eb7e44c6622e6!2sMMCS%20do%20Brasil%20Servi%C3%A7os%20de%20Inform%C3%A1tica!5e0!3m2!1sen!2sca!4v1587683539683!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-ibope.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">jun/2015 - mar/2016</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-database mr-2"></i>Business Intelligence Analyst</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">IBOPE DTM Marketing de Relacionamento</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        Marketing campaigns management, database analysis with 
+                                        <span class="badge badge-dark m-1">SQL Server 2015</span>
+                                        <span class="badge badge-dark m-1">Oracle SQL Developer</span> and 
+                                        <span class="badge badge-dark m-1">ETL with Integration Services</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1858080542297!2d-46.6760658853569!3d-23.525818566165043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd7fa49d7d%3A0x1961e8565a2a5ddc!2sIBOPE%20DTM!5e0!3m2!1sen!2sca!4v1587684015710!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-siscart.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">may/2014 - apr/2015</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Delphi Developer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Siscart</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        Development of systems for registry offices with 
+                                        <span class="badge badge-dark m-1">Delphi 4</span>
+                                        <span class="badge badge-dark m-1">Tortoise SVN</span>
+                                        <span class="badge badge-dark m-1">MySQL 4</span> and 
+                                        <span class="badge badge-dark m-1">Reve Reports</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5170.042047621802!2d-46.635835245824545!3d-23.612516041754123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a23dd383585%3A0xcf9f4b2ea78a693f!2sSiscart%20Sistemas!5e0!3m2!1sen!2sca!4v1587684280433!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-lvrariacultura.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">jun/2011 - feb/2014</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-code mr-2"></i>Delphi Developer</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Livraria Cultura S.A</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        Analysis and development of ERP System with 
+                                        <span class="badge badge-dark m-1">Tortoise SVN</span>
+                                        <span class="badge badge-dark m-1">SQL Server 2005</span>
+                                        <span class="badge badge-dark m-1">Delphi 2007</span> and 
+                                        <span class="badge badge-dark m-1">Rave Reports</span>
+                                        <p class="mt-3"><strong>Main Project</strong>: Development of the Customer Support module, with CRUD and reports.</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2705517043823!2d-46.662325885356!3d-23.55872466737929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd631ba419%3A0xf4ddea8a1b94701f!2sLivraria%20Cultura%20-%20Conjunto%20Nacional!5e0!3m2!1sen!2sca!4v1587684333699!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-lvrariacultura.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">feb/2011 - jun/2011</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-running mr-2"></i>Technical Support</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Livraria Cultura S.A</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        On-site technical support to Livria Cultura stores and logistics. Assembly and maintenance of computers; computer network configuration; 
+                                        configuration and maintenance of printers, fiscal printers; manages technical calls; internal customer support for various processes in 
+                                        store ERP
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2705517043823!2d-46.662325885356!3d-23.55872466737929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd631ba419%3A0xf4ddea8a1b94701f!2sLivraria%20Cultura%20-%20Conjunto%20Nacional!5e0!3m2!1sen!2sca!4v1587684333699!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-advanta.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-4 col-xl-3 text-right"><small class="text-muted text-hover">dec/2009 - aug/2010</small></div>
+                                <div class="col-lg-8 col-xl-9">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-headset mr-2"></i>IT auxiliary</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Advanta Conectividade Inteligente</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        Conducting administrative reports. Call management for technical problems in banks branches of Real and Santander banks
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.378397553082!2d-46.725260513185056!3d-23.653757780907444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510a497278bb%3A0xe92fa56aeea18f3c!2sPanamerica%20Park!5e0!3m2!1sen!2sca!4v1587684210113!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card border-0 my-5">
+                <div class="row r-100 no-gutters">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 my-auto"><img class="card-img img-fluid p-3" src="../art/company/company-atento.png" width="200"></div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                        <div class="card-body">
+                            <div class="row d-flex flex-row-reverse">
+                                <div class="col-lg-3 col-xl-2 text-right"><small class="text-muted text-hover">feb/2008 - jul/2009</small></div>
+                                <div class="col-lg-9 col-xl-10">
+                                    <h2 class="text-subtitle-dark font-text-title font-weight-bold"><i class="fas fa-headset mr-2"></i>Technical Support</h2> 
+                                    <i class="fas fa-building mr-2"></i><small class="text-muted">Atento Brasil</small>
+                                </div>
+                                <div class="row mt-3 p-3">
+                                    <p class="card-text text-describe-dark">
+                                        Broadband Support; home network configuration; formatting and configuration of operating systems and miscellaneous programs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center w-auto">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29269.241005122018!2d-46.69865856044919!3d-23.508928399999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8179a085997%3A0x66d19018258faad9!2sAtento%20Brasil!5e0!3m2!1sen!2sca!4v1587684396239!5m2!1sen!2sca" 
+                                        width="100%" height="100px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mr-2"><a href="#career"><i class="mark-indicator-dark fas fa-angle-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="container-fluid">
+        <div class="mt-5" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-offset="0" data-aos-anchor-placement="top-bottom">
+            <img class="img-fluid mx-auto d-block mb-2" src="../art/logo/logo-rafaelturse-horizontal-dark.svg" width="300px" />
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer mt-5 p-2">
+        <div class="d-flex justify-content-end mr-3"><a href="#top"><i class="mark-indicator-light fas fa-angle-up"></i></a></div>
+        <div class="col">
+            <div class="row px-1">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <small><a class="font-footer-title text-footer-dark-title font-weight-bold" href="professional.html"><i class="fas fa-coffee mr-2"></i>Professional</a></small>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#personal"><i class="fas fa-angle-right mr-2"></i>Personal</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#education"><i class="fas fa-angle-right mr-2"></i>Education</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="professional.html#career"><i class="fas fa-angle-right mr-2"></i>Career</a></small></div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+                    <small><a class="font-footer-title text-footer-dark-title font-weight-bold" href="technical.html"><i class="fas fa-code mr-2"></i>Technical</a></small>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#data"><i class="fas fa-angle-right mr-2"></i>Data</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#technology"><i class="fas fa-angle-right mr-2"></i>Technology</a></small></div>
+                    <div class="row ml-2"><small><a class="font-footer-topic text-footer-dark font-weight-bold" href="technical.html#landscape"><i class="fas fa-angle-right mr-2"></i>Landscape</a></small></div>
+                </div>
+            </div>
+
+            <!-- FOLLOW -->
+            <div id="follow">
+                <div class="row d-flex justify-content-end h-auto p-2">
+                    <a href="https://www.linkedin.com/in/rafaelturse/?locale=en_US" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-linkedin"></i></span></h5></a>
+                    <a href="https://github.com/rafaelturse" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-github"></i></span></h5></a>
+                    <a href="https://twitter.com/rafaelturse" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-twitter"></i></span></h5></a>
+                    <a href="https://www.facebook.com/rafaelturse" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-facebook"></i></span></h5></a>
+                    <a href="https://www.instagram.com/rafaelturse/" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-instagram"></i></span></h5></a>
+                    <a href="https://www.behance.net/rafaelturse/" target="_blank"><h5><span class="font-weight-bold text-footer-dark p-2"><i class="fab fa-behance"></i></span></h5></a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center font-footer-developer text-footer-dark mt-3 mb-1"><small>Developed by <strong>Rafael Turse</strong></small></div>
+        </div>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139876896-1"></script>
+    <script src="../js/control/statistics.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="../js/custom/menu.js"></script>
+    <script src="../js/custom/chart.js"></script>
+    <script src="../js/custom/cron.js"></script>
+    <script src="../js/custom/utils.js"></script>
+    <script src="../js/custom/translator.js"></script>
+    <script src="../js/custom/url.js"></script>
+</body>
+</html>
