@@ -11,7 +11,7 @@ if (focusChart){
         dataLabels: {
             enabled: false
         },
-        series: [70, 100, 50, 60, 80, 60, 90],
+        series: [70, 100, 70, 60, 80, 60, 50],
         responsive: [{
             breakpoint: 500,
             options: {
@@ -24,7 +24,7 @@ if (focusChart){
             position: 'right',
             offsetY: 0
         }
-        ,labels: ['Frontend', 'Backend', 'Mobile', 'Database', 'DevOps', 'Usability', 'Javascript']
+        ,labels: ['Frontend', 'Backend', 'Mobile', 'Database', 'DevOps', 'Usability', 'management']
     }
 
     var chart = new ApexCharts(
@@ -40,10 +40,7 @@ if (null != interestChart){
     var colors = ['#28A745', '#FFC107', '#DC3545', '#17A2b8', '#D86E0A', '#50345B', '#14504B'];
    
     var options = {
-        chart: {
-            height: 350,
-            type: 'bar'
-        },
+        chart: { height: 350, type: 'bar' },
         colors: colors,
         plotOptions: {
             bar: {
@@ -51,17 +48,18 @@ if (null != interestChart){
                 distributed: true
             }
         },
-        dataLabels: { enabled: false },
+        dataLabels: { enabled: true },
         series: [{ data: [10, 9.3, 8.2 ,7.2 ,5.5 ,4.6 ,3.7] }],
+        
         xaxis: {
             categories: [
-                 "Spring"
-                ,"Javascript"
-                ,"DevOps"
-                ,"JSF"
-                ,"Mobile"
-                ,"Database"
+                 "Backend"
                 ,"Frontend"
+                ,"Mobile"
+                ,"Data Base"
+                ,"DevOps"
+                ,"UI/UX"
+                ,"Sushi, Pizza"
             ],
             labels: {
                 style: {
@@ -70,15 +68,10 @@ if (null != interestChart){
                 }
             }
         },
-        yaxis: {
-            show: false,
-            min: 0,
-            max: 11
-        },
+        yaxis: { show: true, min: 0, max: 10 },
         tickAmount: 6,
-        tooltip: {
-            enabled: false
-        }
+        tooltip: { enabled: false },
+        legend: { show: false }
     }
 
     var chart = new ApexCharts(
