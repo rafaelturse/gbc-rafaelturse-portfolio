@@ -104,7 +104,7 @@ if (null != technologyTimeLineChart){
                 horizontal: true,
             }
         },
-        colors:['#DC3545', '#14504B', '#D86E0A', '#17A2b8', '#FFC107', '#50345B', '#28A745'],
+        colors:['#DC3545', '#14504B', '#D86E0A', '#17A2b8', '#FFC107', '#50345B', '#28A745', '#09e6e6'],
         series: [{
             name: 'Support',
             data: [{
@@ -146,6 +146,12 @@ if (null != technologyTimeLineChart){
             data: [{
                 x: '',
                 y: [new Date('2011-07-01').getTime(), now.getTime()]
+            }
+        ]}, {
+            name: 'React',
+            data: [{
+                x: '',
+                y: [new Date('2022-10-01').getTime(), now.getTime()]
             }
         ]}
         ]
